@@ -1,15 +1,19 @@
+#Horror Background Music
+
 play_audio = 1
 use_synth :growl
 play_audio1 = 0
 play_audio2 = 0
 use_bpm 60
 
+#jumpscare part
 sound1 = "Users/test/Downloads/jumpscare1.mp3"
 sound2 = "Users/test/Downloads/jumpscare2.mp3"
 sound3 = "Users/test/Downloads/jumpscare3.mp3"
 sound4 = "Users/test/Downloads/jumpscare4.mp3"
 sound5 = "Users/test/Downloads/jumpscaree.mp3"
 
+#Audio 1
 in_thread do
   loop do
     if play_audio == 1
@@ -43,6 +47,7 @@ in_thread do
   end
 end
 
+#audio 2
 in_thread do
   loop do
     if play_audio1 == 1
@@ -76,6 +81,7 @@ in_thread do
   end
 end
 
+#audio 3
 in_thread do
   loop do
     if play_audio2 == 1
@@ -109,6 +115,7 @@ in_thread do
   end
 end
 
+#set the timing
 at 65 do
   play_audio = 0 #quiet
 end
@@ -170,5 +177,6 @@ at 150 do
     end
   end
 end
+
 
 
